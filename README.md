@@ -10,4 +10,5 @@ For parallel Mean SHift algoithm implementation I used CUDA with Windows 10. In 
 * [CUDA 10.2](https://developer.nvidia.com/cuda-downloads)
 
 I strictly reccomend to read the [CUDA installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html).
-A very common problem is linked to the VS2019 Linker using CUDA, and dependencies: under project properties>Linker>Input>Additional Dependencies remember to copy **cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)**
+A very common problem is linked to the VS2019 Linker using CUDA, and dependencies: under Project Properties > Linker > Input > Additional Dependencies remember to copy: **cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)** in order to correctly link cuda library.
+Debug has to be x64 based.
