@@ -1,4 +1,13 @@
 # CUDA MeanShift
-## A simple implementation of MeanShift algorithm with CUDA.
+### A simple implementation of MeanShift algorithm with CUDA.
 
 In this repo the parallel version of Mean Shift algorithm is presented; this repo belongs to the Master Degree Parallel Computing course project at UNIFI; here the link to its [sequential version](https://github.com/pisalore/MeanShift_sequentialCPP). Here the related [paper](https://github.com/pisalore/MeanShift_CUDA/blob/master.
+
+## Getting Started
+
+For parallel Mean SHift algoithm implementation I used CUDA with Windows 10. In particular:
+* [Visual Studio 2019](https://visualstudio.microsoft.com/it/vs/)
+* [CUDA 10.2](https://developer.nvidia.com/cuda-downloads)
+
+I strictly reccomend to read the [CUDA installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html).
+A very common problem is linked to the VS2019 Linker using CUDA, and dependencies: under project properties>Linker>Input>Additional Dependencies remember to copy 
